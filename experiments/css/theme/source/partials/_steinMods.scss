@@ -1,0 +1,121 @@
+@import "compass/css3";
+
+// Highlight color
+$highlightColor: #AA4A90;
+$altHighlight:orange;
+$contrastColor: #215D16;
+$error: #ff0000;
+
+.reveal{
+	b{
+		color:$highlightColor;
+		font-weight: 900;
+	}
+
+	.highlight{
+		color:$highlightColor;
+	}
+
+	.error{
+		color:$error;
+	}
+
+	.altHighlight{
+		color:$altHighlight;
+
+	}
+
+	// This is if you want something to be a heading for some content.
+	.head{
+		text-align: left;
+		border-bottom: 2px solid #555;
+	}
+
+	.big{
+		font-size:1.5em;
+		line-height: 1.5em;
+	}
+	.bigger{
+		font-size: 2em;
+	}
+	.biggest{
+		font-size: 3em;
+	}
+	.small{
+		font-size:.9em;
+	}
+	.smaller{
+		font-size: .8em;
+	}
+	.smallest{
+		font-size: .7em;
+	}
+
+	//this is if you want to add a note tothe page. 
+	.note{
+		// position: absolute;
+		// bottom:10%;
+		// left:10%;
+		color:#fff;
+		text-align: right;
+		padding: 1em;
+		@include background(rgba(35,35,35,.7));
+		display: inline-block;
+		float: right;
+		font-size: .8em;
+
+		a, a:visited, a:link{
+			color:$altHighlight;
+			border-bottom:1px solid $altHighlight;
+		}
+
+	}
+	
+	//These cover basic two and three column layouts
+
+	.two_1, .two_2{
+		width: 45%;
+		@include box-sizing('border-box');
+		// border: 1px solid black;
+	}
+
+	.two_1{
+		float: left;
+	}
+
+	.two_2{
+		float: right;
+	}
+
+	.three_1, .three_2, .three_3{
+		width:30%;
+		@include box-sizing('border-box');
+		float: left;
+		margin-right: 5%;
+		// border: 1px solid black;
+	}
+
+	.three_3{
+		float: right;
+		margin-right: 0;
+	}
+
+
+// Table styling
+table{
+	border:1px solid #555;
+	border-collapse: collapse;
+	width:100%;
+
+	tr:nth-child(2n){
+		background-color: #ddd;
+		color:#555;
+	}
+
+	td{
+		padding:.5em;
+	}
+}
+
+}//end .reveal
+

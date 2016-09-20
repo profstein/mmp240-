@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Design Do's and Dont's</title>
+    <link rel="stylesheet" href="css/reveal.min.css">
+    <link rel="stylesheet" href="css/theme/beige.css">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/sunburst.css">
+    <style>
+        .reveal ul,
+        .reveal ol {
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <!--				<h2>MMP 240 Web Design</h2>-->
+                <h1 class="highlight">Typographic Hierarchy</h1>
+                <h4>Professor Chris Stein</h4>
+
+            </section>
+            <section>
+                <section>
+                    <h1 class="highlight">The Steps</h1>
+                    <ol>
+                        <li>
+                            <h3>Know (read) Your Content</h3>
+                            <ul>
+                                <li>Identify the different types of content</li>
+                                <li>Identify groups of content and repeating groups</li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <h3>Get the HTML right</h3>
+                            <ul>
+                                <li>Semantic Markup</li>
+                                <li>Classes where needed</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <h3>Style The Text</h3>
+                            <p></p>
+                        </li>
+                    </ol>
+                </section>
+
+
+                <section>
+                    <h1 class="highlight">Know your Content</h1>
+                    <ul>
+                        <li>Identify the different types of content</li>
+                        <li>Identify groups of content and repeating groups</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="highlight">Get the HTML right</h1>
+                    <ul>
+                        <li>Semantic Markup</li>
+                        <li>Classes where needed</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1 class="highlight">Style The Text</h1>
+                    <ul>
+                        <li>Make sure the most important items stand out from the rest.</li>
+                        <li>Each different kind of content needs a different type treatment (color, font, size etc).</li>
+                        <li>The same kinds of content should get the same type treatment.</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2>CSS Typography Properties</h2>
+                    <ul>
+                        <li><b>Font</b>: font-family</li>
+                        <li><b>Weight</b>: font-weight</li>
+                        <li><b>Size</b>: font-size</li>
+                        <li><b>Style</b> (italic): font-style</li>
+                        <li><b>Line Height</b>: line-height</li>
+                        <li><b>Color</b>: color</li>
+                        <li><b>Background Color</b>: background-color</li>
+                        <li><b>Alignment</b>: text-align</li>
+                        <li><b>Case</b>: text-transform</li>
+                    </ul>
+                </section>
+            </section>
+            <!-- section>h2+p+p>img -->
+            <!-- section>h2+p+(div.two_1>p>img)+(div.two_2>p>img) -->
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.min.js"></script>
+    <script>
+        Reveal.initialize({
+            width: 1280,
+            height: 720,
+            transition: 'default',
+
+            dependencies: [
+                {
+                    src: 'lib/js/classList.js',
+                    condition: function () {
+                        return !document.body.classList;
+                    }
+                },
+                {
+                    src: 'plugin/markdown/marked.js',
+                    condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/markdown/markdown.js',
+                    condition: function () {
+                        return !!document.querySelector('[data-markdown]');
+                    }
+                },
+                {
+                    src: 'plugin/highlight/highlight.js',
+                    async: true,
+                    callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
+                },
+                {
+                    src: 'plugin/zoom-js/zoom.js',
+                    async: true,
+                    condition: function () {
+                        return !!document.body.classList;
+                    }
+                },
+                {
+                    src: 'plugin/notes/notes.js',
+                    async: true,
+                    condition: function () {
+                        return !!document.body.classList;
+                    }
+                }
+				]
+        });
+    </script>
+
+</body>
+
+</html>

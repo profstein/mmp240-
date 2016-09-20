@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>MMP 240 Responsive Web Design Intro</title>
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/beige.css">
+	<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/sunburst.css">
+</head>
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>MMP 240 Web Design</h2>
+				<h3 class="highlight">Responsive Web Design (RWD) Intro</h3>
+				<h4>Professor Chris Stein</h4>
+				
+			</section>
+			<section>
+				<section>
+					<h1>First Things First</h1>
+				</section>
+				<section>
+					<h1>Ethan Marcotte</h1>
+					<div class="two_1">
+						<h2>The Article</h2>
+						<p><img src="images/RWD-Marcotte-Article.png" alt="Screenshot of the original article on A List Apart web site"></p>
+					</div>
+					<div class="two_2">
+						<h2>The Book</h2>
+						<p><img src="images/RWD-Marcotte-Book.png" alt="Screen shot of Responsive Web Design Book's web site page."></p>
+					</div>
+				</section>
+				<section>
+					<h2>Links</h2>
+					<ul>
+						<li>The Article: <a href="http://alistapart.com/article/responsive-web-design">http://alistapart.com/article/responsive-web-design</a></li>
+						<li>The Book: <a href="http://www.abookapart.com/products/responsive-web-design">http://www.abookapart.com/products/responsive-web-design</a></li>
+						<li>Marcotte's Site: <a href="http://unstoppablerobotninja.com/">http://unstoppablerobotninja.com/</a></li>
+					</ul>
+				</section>
+			</section>
+			
+			<section>
+				<section>
+					<h1>RWD Big Ideas</h1>
+				</section>
+				<section>
+					<h1>Flexibility (stretchy)</h1>
+				</section>
+				<section><h2>Widths and sizes can change with context.</h2></section>
+				<section>
+					<h1>Breakpoints: Layout Change</h1>
+				</section>
+				<section>
+					<h2>At different screen sizes (widths mostly) the layout changes</h2>
+				</section>
+				<section>
+					<h1>RWD is &hellip;</h1>
+					<ul>
+						<li>Flexible Grid</li>
+						<li>Flexible Media (images, video and such)</li>
+						<li>Media Queries</li>
+					</ul>
+				</section>
+				<section>
+					<h1>A Flexible Grid Means:</h1>
+					<h2>setting widths in percent</h2> 	
+					<pre><code>
+.feature{
+     width:40%;   
+}
+					</code></pre>
+				</section>
+				<section>
+					<h1>How do you think in %?</h1>
+				</section>
+				<section>
+					<h2>Think in px then translate with the <b>magic formula <sup>*</sup> </b></h2>
+					<h1>target &divide; context = result</h1>
+					<p class="note">* no real magic involved</p>
+				</section>
+				<section>
+					
+					<ul>
+						<li><b>Target:</b> The number you want in pixels </li>
+						<li><b>Context:</b> The width of the containing element </li>
+						<li><b>Result:</b> The number as a percent. <em>Move the decimal two places to the right</em></li>
+					</ul>
+				</section>
+				<section>
+					<h1>Example</h1>
+					<p>Target width of my sidebar is 200px. It is in the body which is set to 960px. </p>
+					<p>200 &divide; 960 = .2083333</p>
+					<pre><code>
+.sidebar{
+     width:20.83333%;   
+}
+					</code></pre>
+				</section>
+
+				<section>
+					<h1>Padding and Margin</h1>
+					<p>Same formula but..</p>
+					<ul>
+						<li>Margin: the context is the width of the container</li>
+						<li>Padding: the context is the width of the element itself</li>
+					</ul>
+				</section>
+
+			</section>
+			
+			
+				
+				
+				
+		
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.min.js"></script>
+	<script>
+
+			Reveal.initialize({
+				width:1280,
+				height:720,
+				transition: 'default',
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+</body>
+</html>
